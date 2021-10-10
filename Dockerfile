@@ -12,9 +12,11 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 
 RUN bash nodesource_setup.sh
 
-RUN apt-get install nodejs -y
+RUN apt-get install nodejs -y 
 
 RUN node --version
+
+RUN npm install -g typescript
 
 WORKDIR /app
 
