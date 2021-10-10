@@ -26,12 +26,14 @@ ENV password = "1234"
 
 VOLUME /myvolume
 
-COPY package.json /app/
 
-ADD build /app/
+COPY package.json /app/
 
 RUN npm install
 
+RUN npm run build
+
+ADD build /app/
 
 EXPOSE 3000
 
