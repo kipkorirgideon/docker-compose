@@ -32,6 +32,7 @@ ADD build /app/
 
 RUN npm install
 
+
 EXPOSE 3000
 
 
